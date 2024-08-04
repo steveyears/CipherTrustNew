@@ -16,6 +16,7 @@ const Comparison = ({}: ComparisonProps) => {
                     width={24}
                     height={24}
                     alt="Check"
+                    className="mx-auto"
                 />
             ) : null
         ) : (
@@ -43,7 +44,7 @@ const Comparison = ({}: ComparisonProps) => {
                             </tr>
                             {comparison.map((item) => (
                                 <tr className="body-2" key={item.id}>
-                                    <td className="w-[35%] h-[4.75rem] py-2.5 pr-2.5 border-t border-n-1/5">
+                                    <td className="w-[50%] h-[4.75rem] py-2.5 pr-2.5 border-t border-n-1/5">
                                         <div className="flex items-center">
                                             {item.title}
                                             <Tippy

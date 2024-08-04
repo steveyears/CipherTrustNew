@@ -2,7 +2,7 @@ import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import Image from "next/image";
 import Link from "next/link";
-import { LuExternalLink } from "react-icons/lu";
+import Tagline from "@/components/Tagline";
 
 const index = () => {
   return (
@@ -166,6 +166,67 @@ const index = () => {
             you discover, protect and control your organization&apos;s sensitive
             data, wherever the data resides.
           </p>
+
+          <div className="mt-20 mb-8">
+          <Tagline>CipherTrust Platform Community Edition</Tagline>
+          <p className="h3 mt-2">Also Included</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+          <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+            <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/how-it-works/image-3.webp"
+                height={400}
+                width={400}
+                alt="CipherTrust Manager"
+                className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem]"
+              />
+              <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
+                <div className="p-4 md:p-8">
+                  <p className="h5 text-n-1 mb-2">
+                    Transparent Encryption for Kubernetes
+                  </p>
+                  <p className="mb-4 md:mb-8">
+                    Implement robust encryption for data at rest within your
+                    Kubernetes environments
+                  </p>
+                  <Link
+                    href="resources/ciphertrust-transparent-encryption-for-kubernetes"
+                    className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                  >
+                    Learn more
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+              <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/how-it-works/image-1.webp"
+                  height={400}
+                  width={400}
+                  alt="CipherTrust Manager"
+                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem]"
+                />
+                <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
+                  <div className="p-4 md:p-8">
+                    <p className="h5 text-n-1 mb-2">CipherTrust Manager</p>
+                    <p className="mb-4 md:mb-8">
+                      Enterprise key management solution that enables
+                      organizations to centrally manage encryption keys
+                    </p>
+                    <Link
+                      href="resources/ciphertrust-platform-community-edition"
+                      className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                    >
+                      Learn more
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
         </div>
       </div>
       <div className="absolute top-[24rem] left-[37rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
