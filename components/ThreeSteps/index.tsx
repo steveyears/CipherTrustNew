@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { roadmap } from "@/mocks/three-steps";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 type RoadmapProps = {};
 
 const Roadmap = ({}: RoadmapProps) => (
@@ -20,7 +22,7 @@ const Roadmap = ({}: RoadmapProps) => (
             <div className="relative z-1">
               <Image
                 className="w-full p-4"
-                src={item.imageUrl}
+                src={`${basePath}${item.imageUrl}`}
                 width={628}
                 height={426}
                 alt={item.title}
@@ -39,7 +41,7 @@ const Roadmap = ({}: RoadmapProps) => (
         <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-1/2 -translate-y-1/2">
           <Image
             className="w-full opacity-60"
-            src="/images/gradient.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
             width={942}
             height={942}
             alt="Gradient"

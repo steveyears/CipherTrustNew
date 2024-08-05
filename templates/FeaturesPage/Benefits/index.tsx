@@ -8,6 +8,8 @@ import { benefits } from "@/mocks/benefits";
 
 type BenefitsProps = {};
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const Benefits = ({}: BenefitsProps) => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -43,7 +45,7 @@ const Benefits = ({}: BenefitsProps) => {
                             <SplideSlide key={item.id}>
                                 <div className="flex items-center mb-6">
                                     <Image
-                                        src={item.iconUrl}
+                                        src={`${basePath}${item.iconUrl}`}
                                         width={48}
                                         height={48}
                                         alt={item.title}

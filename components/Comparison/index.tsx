@@ -55,7 +55,7 @@ const Comparison = ({}: ComparisonProps) => {
                                             >
                                                 <div className="flex-shrink-0 ml-3 opacity-30 transition-opacity hover:opacity-100">
                                                     <Image
-                                                        src="/images/icons/help-circle.svg"
+                                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/help-circle.svg`}
                                                         width={24}
                                                         height={24}
                                                         alt="Help"

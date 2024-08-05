@@ -4,7 +4,7 @@ import Image from "next/image";
 import { text, content, apps } from "@/mocks/collaboration";
 
 type CollaborationProps = {};
-
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const Collaboration = ({}: CollaborationProps) => {
     return (
         <Section className="mt-40">
@@ -18,7 +18,7 @@ const Collaboration = ({}: CollaborationProps) => {
                             <li className="mb-3 py-3" key={item.id}>
                                 <div className="flex items-center">
                                     <Image
-                                        src="/images/check_blue.svg"
+                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                                         width={24}
                                         height={24}
                                         alt="Check"
@@ -47,7 +47,7 @@ const Collaboration = ({}: CollaborationProps) => {
                                 <div className="w-[5.75rem] aspect-square m-auto p-[0.1875rem] bg-gradient-to-br from-n-9 to-[#fe08bf] rounded-full">
                                     <div className="flex items-center justify-center w-full h-full bg-n-11 rounded-full">
                                         <Image
-                                            src="/images/collaboration/icon-database.svg"
+                                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/collaboration/icon-database.svg`}
                                             width={48}
                                             height={48}
                                             alt="Brainwave"
@@ -93,7 +93,7 @@ const Collaboration = ({}: CollaborationProps) => {
                                         >
                                             <Image
                                                 className="m-auto"
-                                                src={app.icon}
+                                                src={`${basePath}${app.icon}`}
                                                 width={app.width}
                                                 height={app.height}
                                                 alt={app.title}

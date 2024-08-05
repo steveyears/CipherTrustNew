@@ -21,7 +21,7 @@ const index = () => {
                 <div className="mr-4">
                   <Image
                     className="opacity-60"
-                    src="/images/resources/icon_pdf.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_pdf.svg`}
                     width={28}
                     height={28}
                     alt="Download PDF"
@@ -42,7 +42,7 @@ const index = () => {
                 <div className="mr-4">
                   <Image
                     className="opacity-60"
-                    src="/images/resources/icon_documentation.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_documentation.svg`}
                     width={28}
                     height={28}
                     alt="Online Documentation"
@@ -89,7 +89,7 @@ const index = () => {
             <ul className="body-2 mb-6">
               <li className="flex items-start py-4">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -110,7 +110,7 @@ const index = () => {
               </li>
               <li className="flex items-start py-4 border-t border-n-6">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -133,7 +133,7 @@ const index = () => {
               </li>
               <li className="flex items-start py-4 border-t border-n-6">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -161,7 +161,7 @@ const index = () => {
             <ul className="body-2 mb-6">
               <li className="flex items-start py-4">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -175,7 +175,7 @@ const index = () => {
               </li>
               <li className="flex items-start py-4 border-t border-n-6">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -192,7 +192,7 @@ const index = () => {
               </li>
               <li className="flex items-start py-4 border-t border-n-6">
                 <Image
-                  src="/images/check_blue.svg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"
@@ -211,7 +211,7 @@ const index = () => {
           <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
             <Image
               className="w-full"
-              src="/images/gradient.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
               width={942}
               height={942}
               alt="Gradient"
@@ -229,7 +229,7 @@ const index = () => {
           <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
             <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
               <Image
-                src="/images/how-it-works/image-3.webp"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/image-3.webp`}
                 height={400}
                 width={400}
                 alt="CipherTrust Manager"
@@ -257,7 +257,7 @@ const index = () => {
           <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
             <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
               <Image
-                src="/images/how-it-works/image-2.webp"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/image-2.webp`}
                 height={400}
                 width={400}
                 alt="CipherTrust Manager"

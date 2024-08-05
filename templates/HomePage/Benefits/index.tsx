@@ -7,7 +7,9 @@ import { benefits } from "@/mocks/benefits";
 
 type BenefitsProps = {};
 
+
 const Benefits = ({}: BenefitsProps) => {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
     const ref = useRef<any>(null);
@@ -41,7 +43,7 @@ const Benefits = ({}: BenefitsProps) => {
                                         </p>
                                         <div className="flex items-center mt-auto">
                                             <Image
-                                                src={item.iconUrl}
+                                                src={`${basePath}${item.iconUrl}`} 
                                                 width={48}
                                                 height={48}
                                                 alt={item.title}
@@ -65,7 +67,7 @@ const Benefits = ({}: BenefitsProps) => {
                                             {item.imageUrl && (
                                                 <Image
                                                     className="w-full h-full object-cover rounded-3xl"
-                                                    src={item.imageUrl}
+                                                    src={`${basePath}${item.imageUrl}`} 
                                                     width={380}
                                                     height={362}
                                                     alt={item.title}

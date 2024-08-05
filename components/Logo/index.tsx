@@ -8,7 +8,7 @@ type LogoProps = {
 const Logo = ({ className }: LogoProps) => (
     <Link className={`block w-[11.875rem] ${className || ""}`} href="/">
         <Image
-            src="/images/logo.svg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo.svg`}
             width={190}
             height={40}
             priority={true}

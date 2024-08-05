@@ -13,6 +13,8 @@ type CommunityProps = {};
 const Community = ({}: CommunityProps) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   const ref = useRef<any>(null);
 
   const handleClick = (index: number) => {
@@ -40,7 +42,7 @@ const Community = ({}: CommunityProps) => {
                     <div className="w-20 mr-6 lg:w-40 lg:mr-0 lg:mb-11">
                       <Image
                         className="w-full rounded-full border border-n-1/15"
-                        src={comment.avatarUrl}
+                        src={`${basePath}${comment.avatarUrl}`}
                         width={160}
                         height={160}
                         alt={comment.name}

@@ -10,7 +10,6 @@ const FeaturesPage = () => {
     return (
         <Layout>
             <Hero />
-
             <Features />
             <FeatureSlider />
             <Join />

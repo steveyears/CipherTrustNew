@@ -31,7 +31,7 @@ const HowToUse = ({}: HowToUseProps) => {
             >
               <div className="h6 text-n-1/50">Getting started</div>
               <Image
-                src="/images/icons/chevron-down.svg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-down.svg1`}
                 width={24}
                 height={24}
                 alt="Arrow"
@@ -60,7 +60,7 @@ const HowToUse = ({}: HowToUseProps) => {
                         className={`relative z-1 w-full transition-transform ${
                           group.id === openGroupId ? "rotate-90" : ""
                         }`}
-                        src="/images/icons/chevron-right.svg"
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-right.svg`}
                         width={16}
                         height={16}
                         alt="Arrow"

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
-import Image from "next/image";
 
 const Custom404 = () => {
   return (

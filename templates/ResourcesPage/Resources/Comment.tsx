@@ -6,6 +6,7 @@ import Link from "next/link";
 type CommentProps = {
   comment: any;
 };
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const Comment = ({ comment }: CommentProps) => (
   <div className="flex flex-col bg-n-8 border border-n-1/15 rounded-2xl">
@@ -13,7 +14,7 @@ const Comment = ({ comment }: CommentProps) => (
       <div className="mr-4 min-w-[48px]">
         <Image
           className="opacity-60 mt-1"
-          src={comment.iconUrl}
+          src={`${basePath}${comment.iconUrl}`}
           width={42}
           height={42}
           alt={comment.title}
@@ -44,7 +45,7 @@ const Comment = ({ comment }: CommentProps) => (
     <div className="mr-4 min-w-[48px]">
       <Image
         className="rounded-full border border-n-1/15"
-        src={comment.AuthorAvatar}
+        src={`${basePath}${comment.AuthorAvatar}`}
         width={60}
         height={60}
         alt={comment.AuthorName}

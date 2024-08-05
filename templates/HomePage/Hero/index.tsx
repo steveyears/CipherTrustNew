@@ -28,7 +28,7 @@ const Hero = ({}: HeroProps) => {
               (for free)
               <Image
                 className="absolute top-full left-0 w-full"
-                src="{`${process.env.NEXT_PUBLIC_BASE_PATH}/images/curve_new.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/curve_new.png`}
                 width={624}
                 height={28}
                 alt="Curve"
@@ -44,7 +44,7 @@ const Hero = ({}: HeroProps) => {
         <div className="relative text-center max-w-[23.25rem] mx-auto md:max-w-5xl xl:mb-24 -mt-8">
           <Image
             className="w-[75%] mx-auto z-10 -mt-8 mb-12"
-            src="/images/hero/infinity2.webp"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/hero/infinity2.webp`}
             width={1024}
             height={490}
             alt="CipherTrust Manager Community Edition"
@@ -61,7 +61,7 @@ const Hero = ({}: HeroProps) => {
         <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
           <Image
             className="w-full"
-            src="/images/gradient.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/gradient.png`}
             width={942}
             height={942}
             alt="Gradient"

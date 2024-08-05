@@ -18,7 +18,7 @@ const opensource = () => {
               </div>
             </div>
             <Image
-              src="/images/opensource/logo_opensource.webp"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/opensource/logo_opensource.webp`}
               width={1200}
               height={1200}
               alt="Open Source"
@@ -35,7 +35,7 @@ const opensource = () => {
               <li className="mb-3 py-3">
                 <div className="flex items-center">
                   <Image
-                    src="/images/check_blue.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -49,7 +49,7 @@ const opensource = () => {
               <li className="mb-3 py-3">
                 <div className="flex items-center">
                   <Image
-                    src="/images/check_blue.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -63,7 +63,7 @@ const opensource = () => {
               <li className="mb-3 py-3">
                 <div className="flex items-center">
                   <Image
-                    src="/images/check_blue.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"

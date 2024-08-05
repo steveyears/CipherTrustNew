@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { navigation } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 type FooterProps = {};
 
@@ -41,7 +42,7 @@ const Footer = ({}: FooterProps) => (
                         key={item.id}
                     >
                         <Image
-                            src={item.iconUrl}
+                            src={`${basePath}${item.iconUrl}`}
                             width={16}
                             height={16}
                             alt={item.title}

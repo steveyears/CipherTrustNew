@@ -46,7 +46,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
                   key={index}
                 >
                   <Image
-                    src="/images/check_blue.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"

@@ -8,7 +8,7 @@ import { features } from "@/mocks/feature-slider";
 import Arrows from "@/components/Arrows";
 
 type FeaturesProps = {};
-
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const Features = ({}: FeaturesProps) => {
   const ref = useRef<any>(null);
 
@@ -46,7 +46,7 @@ const Features = ({}: FeaturesProps) => {
                     <div className="relative overflow-hidden w-full h-full">
                       <Image
                         className="object-cover h-full w-full"
-                        src={item.imageUrl}
+                        src={`${basePath}${item.imageUrl}`}
                         width={1000}
                         height={1000}
                         alt="Figure"

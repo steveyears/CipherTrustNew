@@ -10,6 +10,8 @@ import { howItWorks } from "@/mocks/how-it-works";
 
 type HowItWorksProps = {};
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const HowItWorks = ({}: HowItWorksProps) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -49,7 +51,10 @@ const HowItWorks = ({}: HowItWorksProps) => {
                     <h2 className="h2 mb-4 lg:mb-6">{item.title}</h2>
                     <p className="body-2 mb-10 text-n-1">{item.text}</p>
                     <Link href="#">
-                      <Link href={item.url} className="font-code uppercase text-xs px-4 py-4 border border-n-1/15 w-[200px] text-center rounded-xl hover:border-n-9 hover:bg-n-9 transition-all">
+                      <Link
+                        href={item.url}
+                        className="font-code uppercase text-xs px-4 py-4 border border-n-1/15 w-[200px] text-center rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                      >
                         Learn More
                       </Link>
                     </Link>
@@ -65,7 +70,7 @@ const HowItWorks = ({}: HowItWorksProps) => {
                       <div className="h-[30.5rem] bg-n-8 rounded-[1.4375rem] xl:h-[35.625rem]">
                         <Image
                           className="w-full h-full object-cover opacity-80"
-                          src={item.image}
+                          src={`${basePath}${item.image}`}
                           width={550}
                           height={570}
                           alt={item.title}
@@ -88,7 +93,7 @@ const HowItWorks = ({}: HowItWorksProps) => {
           <div className="absolute top-0 -left-[10rem] w-[29.5rem] h-[29.5rem] mix-blend-color-dodge opacity-20 pointer-events-none">
             <Image
               className="absolute top-1/2 left-1/2 w-[55.5rem] max-w-[55.5rem] h-[61.5rem] -translate-x-1/2 -translate-y-1/2"
-              src="/images/how-it-works/gradient.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/gradient.png`}
               width={1024}
               height={1024}
               alt="Gradient"
