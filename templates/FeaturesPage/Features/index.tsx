@@ -1,4 +1,5 @@
 import Section from "@/components/Section";
+import Tagline from "@/components/Tagline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,6 +9,104 @@ const Features = ({}: FeaturesProps) => {
   return (
     <Section>
       <div className="container">
+        <div className="mb-48 -mt-20">
+          <div className="mt-20 mb-8">
+            <Tagline>CipherTrust Platform Community Edition</Tagline>
+            <p className="h3 mt-2">Included in the Community Edition</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-8">
+            <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+              <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/how-it-works/image-1.webp"
+                  height={400}
+                  width={400}
+                  alt="CipherTrust Manager"
+                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem] opacity-80"
+                />
+                <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[17rem] bg-n-11 flex rounded-b-2xl">
+                  <div className="p-6">
+                    <p className="h5 text-n-1 mb-2">CipherTrust Manager</p>
+                    <p className="mb-4 md:mb-8">
+                      Enterprise key management solution that enables
+                      organizations to centrally manage encryption keys
+                    </p>
+                    <div className="lg:absolute lg:bottom-8">
+                    <Link
+                      href="resources/ciphertrust-platform-community-edition"
+                      className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                    >
+                      Learn more
+                    </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+              <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/how-it-works/image-3.webp"
+                  height={400}
+                  width={400}
+                  alt="CipherTrust Manager"
+                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem] opacity-80"
+                />
+                  <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[17rem] bg-n-11 flex rounded-b-2xl">
+                  <div className="p-6">
+                    <p className="h5 text-n-1 mb-2">
+                      Transparent Encryption for Kubernetes
+                    </p>
+                    <p className="mb-4 md:mb-8">
+                      Implement robust encryption for data at rest within your
+                      Kubernetes environments
+                    </p>
+                    <div className="lg:absolute lg:bottom-8">
+                    <Link
+                      href="resources/ciphertrust-transparent-encryption-for-kubernetes"
+                      className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                    >
+                      Learn more
+                    </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+              <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/how-it-works/image-2.webp"
+                  height={400}
+                  width={400}
+                  alt="CipherTrust Manager"
+                  className="w-full h-full object-cover md:-translate-y-[6rem] -translate-y-[3rem] opacity-80"
+                />
+                <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[17rem] bg-n-11 flex rounded-b-2xl">
+                  <div className="p-6">
+                    <p className="h5 text-n-1 mb-2">
+                      Data Protection Gateway
+                    </p>
+                    <p className="mb-4 md:mb-8">
+                      CipherTrust Connector that keeps data in transit secure
+                      without the need to edit application source code
+                    </p>
+                    <div className="lg:absolute lg:bottom-8">
+                    <Link
+                      href="resources/ciphertrust-data-protection-gateway"
+                      className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                    >
+                      Learn more
+                    </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="-mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="flex items-center justify-center -mt-6">
@@ -19,7 +118,7 @@ const Features = ({}: FeaturesProps) => {
                 className="shadow-large-blur p-1 rounded-2xl"
               />
             </div>
-            <div className="absolute top-1/2 -mt-32 right-1/2 w-[46.5rem] h-[46.5rem] border border-n-2/5 rounded-full -translate-y-1/2 opacity-60 mix-blend-color-dodge pointer-events-none">
+            <div className="absolute top-1/2 mt-60 -ml-40 right-1/2 w-[46.5rem] h-[46.5rem] border border-n-2/5 rounded-full -translate-y-1/2 opacity-60 mix-blend-color-dodge pointer-events-none">
               <div className="absolute top-0 -left-16 w-[58.85rem] h-[58.85rem] -translate-y-1/2">
                 <Image
                   className="w-full"

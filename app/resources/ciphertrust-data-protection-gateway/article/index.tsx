@@ -168,46 +168,46 @@ const index = () => {
           </p>
 
           <div className="mt-20 mb-8">
-          <Tagline>CipherTrust Platform Community Edition</Tagline>
-          <p className="h3 mt-2">Also Included</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-          <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
-            <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
-              <Image
-                src="/images/how-it-works/image-3.webp"
-                height={400}
-                width={400}
-                alt="CipherTrust Manager"
-                className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem]"
-              />
-              <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
-                <div className="p-4 md:p-8">
-                  <p className="h5 text-n-1 mb-2">
-                    Transparent Encryption for Kubernetes
-                  </p>
-                  <p className="mb-4 md:mb-8">
-                    Implement robust encryption for data at rest within your
-                    Kubernetes environments
-                  </p>
-                  <Link
-                    href="resources/ciphertrust-transparent-encryption-for-kubernetes"
-                    className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
-                  >
-                    Learn more
-                  </Link>
+            <Tagline>CipherTrust Platform Community Edition</Tagline>
+            <p className="h3 mt-2">Also Included</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+            <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+              <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/how-it-works/image-3.webp"
+                  height={400}
+                  width={400}
+                  alt="CipherTrust Manager"
+                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem] opacity-80"
+                />
+                <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
+                  <div className="p-4 md:p-8">
+                    <p className="h5 text-n-1 mb-2">
+                      Transparent Encryption for Kubernetes
+                    </p>
+                    <p className="mb-4 md:mb-8">
+                      Implement robust encryption for data at rest within your
+                      Kubernetes environments
+                    </p>
+                    <Link
+                      href="resources/ciphertrust-transparent-encryption-for-kubernetes"
+                      className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
+                    >
+                      Learn more
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
+            <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
               <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
                 <Image
                   src="/images/how-it-works/image-1.webp"
                   height={400}
                   width={400}
                   alt="CipherTrust Manager"
-                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem]"
+                  className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem] opacity-80"
                 />
                 <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
                   <div className="p-4 md:p-8">
@@ -226,20 +226,21 @@ const index = () => {
                 </div>
               </div>
             </div>
+          </div>
         </div>
+        <div className="absolute top-[20rem] left-[20rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
+            <Image
+              className="w-full"
+              src="/images/gradient.png"
+              width={942}
+              height={942}
+              alt="Gradient"
+            />
+          </div>
         </div>
       </div>
-      <div className="absolute top-[24rem] left-[37rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
-          <Image
-            className="w-full"
-            src="/images/gradient.png"
-            width={942}
-            height={942}
-            alt="Gradient"
-          />
-        </div>
-      </div>
+
       <div className="absolute -top-0 left-1/2 w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-56 -z-4">
         <div className="absolute top-1/2 left-1/2 w-[65.875rem] aspect-square border border-n-1/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-1/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>

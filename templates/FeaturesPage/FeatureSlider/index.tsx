@@ -13,7 +13,7 @@ const Features = ({}: FeaturesProps) => {
   const ref = useRef<any>(null);
 
   return (
-    <Section className="py-10 md:pb-20 lg:pt-16 lg:pb-32 xl:pb-40 overflow-hidden my-36">
+    <Section className="py-10 md:pb-20 lg:pt-16 lg:pb-26 xl:pb-8 overflow-hidden my-36">
       <div className="container relative z-2">
         <Tagline className="mb-10">Tools Built to Reduce Drag on Velocity</Tagline>
         <Splide

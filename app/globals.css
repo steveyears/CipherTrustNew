@@ -32,4 +32,8 @@ body {
         @apply md:grid !important;
         @apply md:grid-cols-3 md:gap-x-10 md:gap-y-[4.5rem] xl:gap-y-[6rem];
     }
+
+    .no-scroll {
+        overflow: hidden;
+    }
 }

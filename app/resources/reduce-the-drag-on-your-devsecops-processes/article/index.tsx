@@ -88,9 +88,9 @@ const index = () => {
                     Data protection across a multi-cloud infrastructure is
                     complex:
                   </span>{" "}
-                  Protecting data using each cloud provider&apos;s native security
-                  services can soon become complex to manage, unless you choose
-                  a single data security platform that works across a
+                  Protecting data using each cloud provider&apos;s native
+                  security services can soon become complex to manage, unless
+                  you choose a single data security platform that works across a
                   multi-cloud infrastructure.
                 </p>
               </li>
@@ -293,8 +293,8 @@ const index = () => {
           </p>
           <p className="h4 mb-6">Speedup DevSecOps Processes</p>
           <p className="body-1 mb-6">
-            Thales&appos; CipherTrust Platform Community Edition makes it easy for
-            DevSecOps to deploy data protection controls into hybrid and
+            Thales&appos; CipherTrust Platform Community Edition makes it easy
+            for DevSecOps to deploy data protection controls into hybrid and
             multi-cloud applications in a fraction of the time it takes with
             other data protection solutions available in the market today.
           </p>
@@ -331,8 +331,8 @@ const index = () => {
                 across multi-cloud applications using a Virtual CipherTrust
                 Manager. When required, one can upgrade to a version of
                 CipherTrust Manager that works with a FIPS 140-2 Level 3
-                certified Thales&apos; Luna Hardware Security Module to provide a
-                secure root of trust.
+                certified Thales&apos; Luna Hardware Security Module to provide
+                a secure root of trust.
               </p>
             </li>
             <li className="flex items-start py-4 mb-6">
@@ -356,18 +356,19 @@ const index = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="absolute top-[24rem] left-[37rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
-          <Image
-            className="w-full"
-            src="/images/gradient.png"
-            width={942}
-            height={942}
-            alt="Gradient"
-          />
+        <div className="absolute top-[20rem] left-[20rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
+            <Image
+              className="w-full"
+              src="/images/gradient.png"
+              width={942}
+              height={942}
+              alt="Gradient"
+            />
+          </div>
         </div>
       </div>
+
       <div className="absolute -top-0 left-1/2 w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-56 -z-4">
         <div className="absolute top-1/2 left-1/2 w-[65.875rem] aspect-square border border-n-1/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-1/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>

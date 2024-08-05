@@ -224,7 +224,7 @@ const index = () => {
                 height={400}
                 width={400}
                 alt="CipherTrust Manager"
-                className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem]"
+                className="w-full h-full object-cover md:-translate-y-[8rem] -translate-y-[4rem] opacity-80"
               />
               <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
                 <div className="p-4 md:p-8">
@@ -252,7 +252,7 @@ const index = () => {
                 height={400}
                 width={400}
                 alt="CipherTrust Manager"
-                className="w-full h-full object-cover md:-translate-y-[6rem] -translate-y-[3rem]"
+                className="w-full h-full object-cover md:-translate-y-[6rem] -translate-y-[3rem] opacity-80"
               />
               <div className="absolute bottom-0 left-0 w-full min-h-[10rem] md:min-h-[14rem] bg-n-11 flex rounded-b-2xl">
                 <div className="p-4 md:p-8">
@@ -273,18 +273,17 @@ const index = () => {
               </div>
             </div>
           </div>
+          <div className="absolute top-[20rem] left-[30rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
+            <Image
+              className="w-full"
+              src="/images/gradient.png"
+              width={942}
+              height={942}
+              alt="Gradient"
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="absolute top-[24rem] left-[37rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
-          <Image
-            className="w-full"
-            src="/images/gradient.png"
-            width={942}
-            height={942}
-            alt="Gradient"
-          />
         </div>
       </div>
 
