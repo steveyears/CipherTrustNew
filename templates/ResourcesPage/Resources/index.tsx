@@ -1,12 +1,16 @@
 import dynamic from "next/dynamic";
-import { useMediaQuery } from "react-responsive";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import Image from "next/image";
 import Link from "next/link";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import AWSVideo from "@/components/ModalVideos/video_AWS_commandline"
+
 import { LuExternalLink } from "react-icons/lu";
 import { IoMdDownload } from "react-icons/io";
+
+
+
 const Grid = dynamic(() => import("./Grid"), { ssr: false });
 
 import { resources } from "@/mocks/resources";
@@ -30,6 +34,41 @@ const Resources = ({}: ResourcesProps) => {
               columnsCountBreakPoints={{ 1:1, 768: 2, 1280: 3 }}
             >
               <Masonry gutter="1.5rem">
+              <div className="flex flex-col bg-n-8 border border-n-1/15 rounded-2xl">
+                  <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
+                    <div className="mr-4 min-w-[48px]">
+                      <Image
+                        src="/images/resources/icon_video.svg"
+                        width={42}
+                        height={42}
+                        alt="icon"
+                        className="opacity-60"
+                      />
+                    </div>
+
+                    <div className="mr-5">
+                      <h6 className="h6 leading-tight mb-1">
+                        Video Tutorials
+                      </h6>
+                      <div className="caption text-n-1/25">Online Refererence</div>
+                    </div>
+                  </div>
+                  <div className="body-2 flex-1 px-5 py-6 md:px-10">
+                  <ul className="body-2">
+                      <li className="flex items-start py-4">
+                        <Image
+                          src="/images/check_blue.svg"
+                          width={24}
+                          height={24}
+                          alt="Check"
+                        />
+                          <p className="ml-4">
+                          <AWSVideo />
+                          </p>
+                      </li>
+                      </ul>
+                  </div>
+                  </div>
                 <div className="flex flex-col bg-n-8 border border-n-1/15 rounded-2xl">
                   <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
                     <div className="mr-4 min-w-[48px]">

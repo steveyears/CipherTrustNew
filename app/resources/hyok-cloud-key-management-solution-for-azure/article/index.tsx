@@ -177,7 +177,7 @@ const index = () => {
             and native key stores are difficult to manage manually, and
             organizations may be stretched to consistently apply key lifecycle
             management policies such as rotation, backup and role-based access
-            management across their entire digital estate – leading to security
+            management across their entire digital estate &ndash; leading to security
             holes and failed audits. 99% of data breaches occur because of human
             error. You can shrink the threat surface introduced by human error
             when you use centralized automated key lifecycle management provided

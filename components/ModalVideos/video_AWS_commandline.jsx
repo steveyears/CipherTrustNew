@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { VscMultipleWindows } from "react-icons/vsc";
 
 const ModalVideo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const ModalVideo = () => {
 
   return (
     <div className="relative">
-      <button onClick={toggleModal} className="btn">Open Video</button>
+      <button onClick={toggleModal} className="text-left hover:text-n-9 transition-all">Deploy CipherTrust Manager on AWS with Terraform  <VscMultipleWindows className="inline-block -mt-1 ml-2" /></button>
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
           <div className="relative w-full max-w-6xl p-4 bg-n-11 rounded-lg">
@@ -32,7 +33,7 @@ const ModalVideo = () => {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://app.heygen.com/embeds/001355cc46ae4a03b9529d8a9f2068e9"
-                title="YouTube video player"
+                title="HeyGen Video Player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
