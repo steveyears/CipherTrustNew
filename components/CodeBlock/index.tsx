@@ -3,6 +3,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Image from "next/image";
+import { transform } from "typescript";
 
 const customA11yDark = {
   ...a11yDark,
@@ -39,10 +40,12 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, value, theme = 'a11yDar
           backgroundColor: '#00ab8e', // Green background
           color: 'white', // White text
           border: 'none', // No border
-          padding: '5px 10px', // Padding
+          padding: '1px 15px', // Padding
           margin: '10px 10px',
           borderRadius: '5px', // Rounded edges
-          cursor: 'pointer' // Pointer cursor on hover
+          cursor: 'pointer', // Pointer cursor on hover
+          textTransform: 'uppercase',
+          fontSize: '12px',
         }}>
           {copied ? 'Copied!' : 'Copy'}
         </button>
