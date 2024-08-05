@@ -62,7 +62,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
             <div className="absolute top-0 w-full">
               <Image
                 className="w-full h-full"
-                src="{`${process.env.NEXT_PUBLIC_BASE_PATH}/images/services/kubernetes_bg.webp`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/services/kubernetes_bg.webp`}
                 width={900}
                 height={748}
                 alt="Kubernetes"
