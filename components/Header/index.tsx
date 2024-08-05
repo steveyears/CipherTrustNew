@@ -1,5 +1,4 @@
-
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
@@ -11,7 +10,7 @@ import { navigation } from "@/constants/navigation";
 
 type HeaderProps = {};
 
-const Header = ({}: HeaderProps) => {
+const HeaderContent = () => {
     const [openNavigation, setOpenNavigation] = useState<boolean>(false);
     const searchParams = useSearchParams(); // Initialize searchParams here
 
@@ -79,8 +78,7 @@ const Header = ({}: HeaderProps) => {
                         ))}
                     </div>
                     <div className="absolute inset-0 pointer-events-none lg:hidden">
-                        <div className="absolute inset-0 opacity-[.03]">
-                        </div>
+                        <div className="absolute inset-0 opacity-[.03]"></div>
                         <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2">
                             <div className="absolute top-1/2 left-1/2 w-[36.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
                             <div className="absolute top-1/2 left-1/2 w-[23.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -104,11 +102,8 @@ const Header = ({}: HeaderProps) => {
                 >
                     <FaGithub className="inline-block mr-2 -mt-0.5"/>Clone Repository
                 </Link>
- 
-                <div
-                    className="ml-auto lg:hidden"
-                    onClick={toggleNavigation}
-                >
+
+                <div className="ml-auto lg:hidden" onClick={toggleNavigation}>
                     <svg
                         className="overflow-visible"
                         width="20"
@@ -139,6 +134,14 @@ const Header = ({}: HeaderProps) => {
                 </div>
             </div>
         </div>
+    );
+};
+
+const Header = ({}: HeaderProps) => {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <HeaderContent />
+        </Suspense>
     );
 };
 
