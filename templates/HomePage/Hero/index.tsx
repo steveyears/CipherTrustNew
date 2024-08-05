@@ -28,7 +28,7 @@ const Hero = ({}: HeroProps) => {
               (for free)
               <Image
                 className="absolute top-full left-0 w-full"
-                src="/images/curve_new.png"
+                src="{`${process.env.NEXT_PUBLIC_BASE_PATH}/images/curve_new.png"
                 width={624}
                 height={28}
                 alt="Curve"
