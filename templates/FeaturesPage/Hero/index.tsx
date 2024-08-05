@@ -26,7 +26,7 @@ const Hero = ({}: HeroProps) => (
     </div>
     <div className="hidden lg:block absolute left-1/2 top-0 w-full -mt-20 -ml-24">
           <Image
-            src="/images/features/cloud_bg2.webp"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/features/cloud_bg2.webp`}
             width={860}
             height={860}
             alt="Gradient"

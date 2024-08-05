@@ -14,7 +14,7 @@ const Help = ({}: HelpProps) => (
         <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
           <Image
             className="w-full opacity-60"
-            src="/images/gradient.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
             width={942}
             height={942}
             alt="Gradient"
@@ -24,7 +24,7 @@ const Help = ({}: HelpProps) => (
       <div className="hidden lg:block z-1">
         <div>
           <Image
-            src="/images/help/need_help2.webp"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/help/need_help2.webp`}
             width={500}
             height={500}
             alt="Help"
