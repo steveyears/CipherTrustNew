@@ -2,15 +2,11 @@
   "name": "ciphertrust",
   "version": "1.0",
   "private": true,
-  "homepage": "https://ThalesGroup.github.io/ciphertrust",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "export": "next build && next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.22",
