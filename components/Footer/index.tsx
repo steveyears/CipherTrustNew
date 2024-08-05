@@ -35,7 +35,7 @@ const Footer = ({}: FooterProps) => (
             <div className="flex justify-center -mx-4">
                 {socials.map((item) => (
                     <a
-                        className="flex items-center justify-center w-10 h-10 mx-4 bg-n-8 rounded-full transition-colors hover:bg-n-6"
+                        className="flex items-center justify-center w-10 h-10 mx-4 bg-n-8 rounded-full transition-colors hover:bg-n-5"
                         href={item.url}
                         target="_blank"
                         key={item.id}

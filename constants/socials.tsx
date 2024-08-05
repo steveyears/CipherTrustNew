@@ -18,4 +18,10 @@ export const socials = [
         iconUrl: "/images/socials/facebook2.svg",
         url: "https://www.facebook.com/ThalesCloudSec/",
     },
+    {
+        id: "3",
+        title: "YouTube",
+        iconUrl: "/images/socials/youtube2.svg",
+        url: "https://www.youtube.com/channel/UCBUSZK1OyuyHpZnGilUzj9g",
+    },
 ];
