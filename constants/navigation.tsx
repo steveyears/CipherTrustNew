@@ -24,8 +24,8 @@ export const navigation = [
     },
     {
         id: "5",
-        title: "Contact Us",
-        url: "/login",
+        title: "Community",
+        url: "https://ciphertrust.dev",
         onlyMobile: true,
     },
 ];
