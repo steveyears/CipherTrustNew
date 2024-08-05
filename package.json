@@ -2,10 +2,11 @@
   "name": "ciphertrust",
   "version": "1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
+    "deploy": "next build && next export && touch out/.nojekyll && git add out && git commit -m 'Deploy to GitHub Pages' && git push origin `git subtree split --prefix out main`:gh-pages --force",
     "start": "next start",
     "lint": "next lint"
   },

@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {}
 
-const isProd = process.env.NODE_ENV = "production";
+const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig = {
-    basePath: isProd ? "/CipherTrustNew" : "",
-    output: "export",
-    distDir: "dist",
-    images: {
-        unoptimized: true,
-    },
-}
-
-export default nextConfig;
+module.exports = {
+  output: 'export',
+  assetPrefix: isProd ? '/CipherTrustNew/' : '',
+  basePath: isProd ? '/CipherTrustNew' : '',
+  images: {
+    unoptimized: true,
+  },
+};
