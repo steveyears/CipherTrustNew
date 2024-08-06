@@ -5,7 +5,10 @@ import Link from "next/link";
 import Comparison from "@/components/Comparison";
 import Tagline from "@/components/Tagline";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+import { useRouter } from 'next/router';
+
+const ResourceLinks = () => {
+  const { basePath } = useRouter();
 
 const index = () => {
   return (
@@ -247,7 +250,7 @@ const index = () => {
                     Kubernetes environments
                   </p>
                   <Link
-                    href={`${basePath}resources/ciphertrust-transparent-encryption-for-kubernetes`}
+                    href={`${basePath}/resources/ciphertrust-transparent-encryption-for-kubernetes`}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
@@ -276,7 +279,7 @@ const index = () => {
                   </p>
                   
                   <Link
-                    href={`${basePath}resources/ciphertrust-data-protection-gateway`}
+                    href={`${basePath}/resources/ciphertrust-data-protection-gateway`}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
