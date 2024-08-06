@@ -247,7 +247,7 @@ const index = () => {
                     Kubernetes environments
                   </p>
                   <Link
-                    href={`${basePath}/ciphertrust-transparent-encryption-for-kubernetes`}
+                    href={`${basePath}/resources/ciphertrust-transparent-encryption-for-kubernetes`}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
@@ -276,7 +276,7 @@ const index = () => {
                   </p>
                   
                   <Link
-                    href={`${basePath}/ciphertrust-data-protection-gateway`}
+                    href={`${basePath}/resources/ciphertrust-data-protection-gateway`}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more

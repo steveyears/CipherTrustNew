@@ -3,6 +3,8 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 type JoinProps = {};
 
 const Join = ({}: JoinProps) => (
@@ -16,7 +18,7 @@ const Join = ({}: JoinProps) => (
               CipherTrust
               <Image
                 className="absolute top-full left-0 w-full"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/curve_new.png`}
+                src={`${basePath}/images/curve_new.png`}
                 width={624}
                 height={28}
                 alt="Curve"
@@ -54,7 +56,7 @@ const Join = ({}: JoinProps) => (
           <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
             <Image
               className="w-full"
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
+              src={`${basePath}/images/gradient.png`}
               width={942}
               height={942}
               alt="Gradient"
