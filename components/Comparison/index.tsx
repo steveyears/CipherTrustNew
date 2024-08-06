@@ -12,7 +12,7 @@ const Comparison = ({}: ComparisonProps) => {
         typeof value === "boolean" ? (
             value === true ? (
                 <Image
-                    src="/images/check_green.svg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}"/images/check_green.svg`}
                     width={24}
                     height={24}
                     alt="Check"
