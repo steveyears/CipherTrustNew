@@ -273,7 +273,7 @@ const index = () => {
                     without the need to edit application source code
                   </p>
                   <Link
-                    href="/ciphertrust-data-protection-gateway"
+                    href="resources/ciphertrust-data-protection-gateway"
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
