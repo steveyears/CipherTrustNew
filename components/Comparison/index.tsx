@@ -5,6 +5,8 @@ import Section from "@/components/Section";
 
 import { comparison } from "@/mocks/comparison";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 type ComparisonProps = {};
 
 const Comparison = ({}: ComparisonProps) => {
@@ -12,7 +14,7 @@ const Comparison = ({}: ComparisonProps) => {
         typeof value === "boolean" ? (
             value === true ? (
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_green.svg`}
+                    src={`${basePath}/images/check_green.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -55,7 +57,7 @@ const Comparison = ({}: ComparisonProps) => {
                                             >
                                                 <div className="flex-shrink-0 ml-3 opacity-30 transition-opacity hover:opacity-100">
                                                     <Image
-                                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/help-circle.svg`}
+                                                        src={`${basePath}/images/icons/help-circle.svg`}
                                                         width={24}
                                                         height={24}
                                                         alt="Help"
