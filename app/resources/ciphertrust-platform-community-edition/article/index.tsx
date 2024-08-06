@@ -5,6 +5,12 @@ import Link from "next/link";
 import Comparison from "@/components/Comparison";
 import Tagline from "@/components/Tagline";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const relativePath1 = "resources/ciphertrust-data-protection-gateway";
+const relativePath2 = "resources/ciphertrust-transparent-encryption-for-kubernetes";
+const fullPathDataProtectionGateway = `${basePath}${relativePath1}`;
+const fullPathCTEKubernetes = `${basePath}${relativePath2}`;
+
 const index = () => {
   return (
     <Section>
@@ -245,7 +251,7 @@ const index = () => {
                     Kubernetes environments
                   </p>
                   <Link
-                    href="resources/ciphertrust-transparent-encryption-for-kubernetes"
+                    href={fullPathCTEKubernetes}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
@@ -272,8 +278,9 @@ const index = () => {
                     CipherTrust Connector that keeps data in transit secure
                     without the need to edit application source code
                   </p>
+                  
                   <Link
-                    href="resources/ciphertrust-data-protection-gateway"
+                    href={fullPathDataProtectionGateway}
                     className="text-xs font-code uppercase px-4 py-2 md:px-6 md:py-4 border border-n-1/10 rounded-xl hover:border-n-9 hover:bg-n-9 transition-all"
                   >
                     Learn more
