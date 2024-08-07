@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 type LogoProps = {
     className?: string;
 };
@@ -8,7 +10,7 @@ type LogoProps = {
 const Logo = ({ className }: LogoProps) => (
     <Link className={`block w-[11.875rem] ${className || ""}`} href="/">
         <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo.svg`}
+            src={`${basePath}/images/logo.svg`}   
             width={190}
             height={40}
             priority={true}

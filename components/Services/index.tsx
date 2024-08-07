@@ -11,6 +11,8 @@ type ServicesProps = {
   containerClassName?: string;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const Services = ({ containerClassName }: ServicesProps) => (
   <Section>
     <div className={`container ${containerClassName || ""}`}>
@@ -23,7 +25,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
           <div className="absolute top-0 right-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
             <Image
               className="w-full h-full object-cover object-right"
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/services/devops3_bg.webp`}
+              src={`${basePath}/images/services/devops3_bg.webp`}
               width={797}
               height={733}
               alt="Full separation of DevSecOps duties"
@@ -46,7 +48,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
                   key={index}
                 >
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -62,7 +64,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
             <div className="absolute top-0 w-full">
               <Image
                 className="w-full h-full"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/services/kubernetes_bg.webp`}
+                src={`${basePath}/images/services/kubernetes_bg.webp`}
                 width={900}
                 height={748}
                 alt="Kubernetes"
@@ -100,7 +102,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
             <div className="absolute bottom-0 w-full pointer-events-none">
               <Image
                 className="w-full"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/services/cloud4_bg.webp`}
+                src={`${basePath}/images/services/cloud4_bg.webp`}
                 width={517}
                 height={400}
                 alt="Cloud Native"
@@ -111,7 +113,7 @@ const Services = ({ containerClassName }: ServicesProps) => (
         <div className="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
           <Image
             className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[79.5625rem] h-[88.5625rem] -translate-x-1/2 -translate-y-1/2"
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/gradient.png`}
+            src={`${basePath}/images/gradient.png`}
             width={1417}
             height={1417}
             alt="Gradient"

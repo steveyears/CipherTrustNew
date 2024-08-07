@@ -9,7 +9,7 @@ import AWSVideo from "@/components/ModalVideos/video_AWS_commandline"
 import { LuExternalLink } from "react-icons/lu";
 import { IoMdDownload } from "react-icons/io";
 
-
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const Grid = dynamic(() => import("./Grid"), { ssr: false });
 
@@ -38,7 +38,7 @@ const Resources = ({}: ResourcesProps) => {
                   <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
                     <div className="mr-4 min-w-[48px]">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_video.svg`}
+                        src={`${basePath}/images/resources/icon_video.svg`}
                         width={42}
                         height={42}
                         alt="icon"
@@ -57,7 +57,7 @@ const Resources = ({}: ResourcesProps) => {
                   <ul className="body-2">
                       <li className="flex items-start py-4">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -73,7 +73,7 @@ const Resources = ({}: ResourcesProps) => {
                   <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
                     <div className="mr-4 min-w-[48px]">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_documentation.svg`}
+                        src={`${basePath}/images/resources/icon_documentation.svg`}
                         width={42}
                         height={42}
                         alt="icon"
@@ -92,7 +92,7 @@ const Resources = ({}: ResourcesProps) => {
                     <ul className="body-2">
                       <li className="flex items-start py-4">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -110,7 +110,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -128,7 +128,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -151,7 +151,7 @@ const Resources = ({}: ResourcesProps) => {
                   <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
                     <div className="mr-4 min-w-[48px]">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_pdf.svg`}
+                        src={`${basePath}/images/resources/icon_pdf.svg`}
                         width={42}
                         height={42}
                         alt="icon"
@@ -170,7 +170,7 @@ const Resources = ({}: ResourcesProps) => {
                     <ul className="body-2">
                       <li className="flex items-start py-4">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -188,7 +188,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -206,7 +206,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -229,7 +229,7 @@ const Resources = ({}: ResourcesProps) => {
                   <div className="flex items-start px-5 py-6 bg-n-7 rounded-t-[0.9375rem] md:px-10">
                     <div className="mr-4 min-w-[48px]">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/resources/icon_cloud.svg`}
+                        src={`${basePath}/images/resources/icon_cloud.svg`}
                         width={42}
                         height={42}
                         alt="icon"
@@ -248,7 +248,7 @@ const Resources = ({}: ResourcesProps) => {
                     <ul className="body-2">
                       <li className="flex items-start py-4">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -266,7 +266,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -284,7 +284,7 @@ const Resources = ({}: ResourcesProps) => {
                       </li>
                       <li className="flex items-start py-4 border-t border-n-6">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                          src={`${basePath}/images/check_blue.svg`}
                           width={24}
                           height={24}
                           alt="Check"
@@ -311,7 +311,7 @@ const Resources = ({}: ResourcesProps) => {
             <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
               <Image
                 className="w-full"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
+                src={`${basePath}/images/gradient.png`}
                 width={942}
                 height={942}
                 alt="Gradient"

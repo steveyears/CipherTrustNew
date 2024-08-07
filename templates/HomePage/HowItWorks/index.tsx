@@ -93,7 +93,7 @@ const HowItWorks = ({}: HowItWorksProps) => {
           <div className="absolute top-0 -left-[10rem] w-[29.5rem] h-[29.5rem] mix-blend-color-dodge opacity-20 pointer-events-none">
             <Image
               className="absolute top-1/2 left-1/2 w-[55.5rem] max-w-[55.5rem] h-[61.5rem] -translate-x-1/2 -translate-y-1/2"
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/gradient.png`}
+              src={`${basePath}/images/how-it-works/gradient.png`}
               width={1024}
               height={1024}
               alt="Gradient"

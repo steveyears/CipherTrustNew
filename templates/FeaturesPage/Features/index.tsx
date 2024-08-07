@@ -5,6 +5,8 @@ import Link from "next/link";
 
 type FeaturesProps = {};
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const Features = ({}: FeaturesProps) => {
   return (
     <Section>
@@ -18,7 +20,7 @@ const Features = ({}: FeaturesProps) => {
             <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
               <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/image-1.webp`}
+                  src={`${basePath}/images/how-it-works/image-1.webp`}
                   height={400}
                   width={400}
                   alt="CipherTrust Manager"
@@ -46,7 +48,7 @@ const Features = ({}: FeaturesProps) => {
             <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
               <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/image-3.webp`}
+                  src={`${basePath}/images/how-it-works/image-3.webp`}
                   height={400}
                   width={400}
                   alt="CipherTrust Manager"
@@ -77,7 +79,7 @@ const Features = ({}: FeaturesProps) => {
             <div className="relative z-9 rounded-xl border border-n-1/10 h-full flex flex-col justify-end">
               <div className="w-full min-h-[24rem] md:min-h-[32rem] overflow-hidden rounded-2xl">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/how-it-works/image-2.webp`}
+                  src={`${basePath}/images/how-it-works/image-2.webp`}
                   height={400}
                   width={400}
                   alt="CipherTrust Manager"
@@ -111,7 +113,7 @@ const Features = ({}: FeaturesProps) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <div className="flex items-center justify-center -mt-6">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/features/CipherTrust_Dashboard.webp`}
+                src={`${basePath}/images/features/CipherTrust_Dashboard.webp`}
                 width="1000"
                 height="1000"
                 alt="Application Window"
@@ -122,7 +124,7 @@ const Features = ({}: FeaturesProps) => {
               <div className="absolute top-0 -left-16 w-[58.85rem] h-[58.85rem] -translate-y-1/2">
                 <Image
                   className="w-full"
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
+                  src={`${basePath}/images/gradient.png`}
                   width={942}
                   height={942}
                   alt="Gradient"
@@ -136,7 +138,7 @@ const Features = ({}: FeaturesProps) => {
               <ul className="body-2">
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -153,7 +155,7 @@ const Features = ({}: FeaturesProps) => {
                 </li>
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -167,7 +169,7 @@ const Features = ({}: FeaturesProps) => {
                 </li>
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -190,7 +192,7 @@ const Features = ({}: FeaturesProps) => {
               <ul className="body-2">
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -206,7 +208,7 @@ const Features = ({}: FeaturesProps) => {
                 </li>
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -232,7 +234,7 @@ const Features = ({}: FeaturesProps) => {
               <ul className="body-2">
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"
@@ -248,7 +250,7 @@ const Features = ({}: FeaturesProps) => {
                 </li>
                 <li className="flex items-start py-4 border-t border-n-6">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                    src={`${basePath}/images/check_blue.svg`}
                     width={24}
                     height={24}
                     alt="Check"

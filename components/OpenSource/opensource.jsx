@@ -3,6 +3,8 @@ import Image from "next/image";
 import Section from "../Section/";
 import { FaGithub } from "react-icons/fa";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const opensource = () => {
   return (
     <Section>
@@ -18,7 +20,7 @@ const opensource = () => {
               </div>
             </div>
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/opensource/logo_opensource.webp`}
+              src={`${basePath}/images/opensource/logo_opensource.webp`}
               width={1200}
               height={1200}
               alt="Open Source"

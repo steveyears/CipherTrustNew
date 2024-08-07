@@ -13,6 +13,8 @@ import { navigation } from "@/mocks/getting-started";
 
 type GettingStartedProps = {};
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const GettingStarted = ({}: GettingStartedProps) => {
   const [openNavigation, setOpenNavigation] = useState<boolean>(false);
   const [openGroupId, setOpenGroupId] = useState<string | null>("g0");
@@ -67,7 +69,7 @@ terraform apply
             >
               <div className="h6 text-n-1/50">Getting started</div>
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-down.svg`}
+                src={`${basePath}/images/icons/chevron-down.svg`}
                 width={24}
                 height={24}
                 alt="Arrow"
@@ -96,7 +98,7 @@ terraform apply
                         className={`relative z-1 w-full transition-transform ${
                           group.id === openGroupId ? "rotate-90" : ""
                         }`}
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-right.svg`}
+                        src={`${basePath}/images/icons/chevron-right.svg`}
                         width={16}
                         height={16}
                         alt="Arrow"
@@ -167,7 +169,7 @@ terraform apply
                 <ul className="body-2">
                   <li className="flex items-start py-4 border-t border-n-6">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                      src={`${basePath}/images/check_blue.svg`}
                       width={24}
                       height={24}
                       alt="Check"
@@ -188,7 +190,7 @@ terraform apply
                   </li>
                   <li className="flex items-start py-4 border-t border-n-6">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                      src={`${basePath}/images/check_blue.svg`}
                       width={24}
                       height={24}
                       alt="Check"
@@ -209,7 +211,7 @@ terraform apply
                   </li>
                   <li className="flex items-start py-4 border-t border-n-6">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                      src={`${basePath}/images/check_blue.svg`}
                       width={24}
                       height={24}
                       alt="Check"
@@ -229,7 +231,7 @@ terraform apply
                   </li>
                   <li className="flex items-start py-4 border-t border-n-6">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                      src={`${basePath}/images/check_blue.svg`}
                       width={24}
                       height={24}
                       alt="Check"
@@ -362,7 +364,7 @@ terraform apply
                 configure CipherTrust manager in the next step
               </p>
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/getting-started/AWS_Terminal_Screen.webp`}
+                src={`${basePath}/images/getting-started/AWS_Terminal_Screen.webp`}
                 width={1200}
                 height={800}
                 alt="AWS Terminal Screen"

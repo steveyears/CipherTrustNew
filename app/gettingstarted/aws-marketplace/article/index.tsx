@@ -28,6 +28,8 @@ const GettingStarted = ({}: GettingStartedProps) => {
     return "text-n-2"; 
   };
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
     <Section>
       <div className="container md:py-10 lg:pt-16 xl:pt-20">
@@ -45,7 +47,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
             >
               <div className="h6 text-n-1/50">Getting started</div>
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}images/icons/chevron-down.svg`}
+                src={`${basePath}images/icons/chevron-down.svg`}
                 width={24}
                 height={24}
                 alt="Arrow"
@@ -74,7 +76,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
                         className={`relative z-1 w-full transition-transform ${
                           group.id === openGroupId ? "rotate-90" : ""
                         }`}
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-right.svg`}
+                        src={`${basePath}/images/icons/chevron-right.svg`}
                         width={16}
                         height={16}
                         alt="Arrow"

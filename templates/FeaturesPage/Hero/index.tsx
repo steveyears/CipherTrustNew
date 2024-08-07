@@ -1,9 +1,10 @@
 import Heading from "@/components/Heading";
 import Image from "next/image";
-import Link from "next/link";
 import Section from "@/components/Section";
 
 type HeroProps = {};
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const Hero = ({}: HeroProps) => (
   <Section className="relative overflow-visible md:mb-4 lg:mb-12">
@@ -26,7 +27,7 @@ const Hero = ({}: HeroProps) => (
     </div>
     <div className="hidden lg:block absolute left-1/2 top-0 w-full -mt-20 -ml-24">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}//images/features/cloud_bg2.webp`}
+            src={`${basePath}/images/features/cloud_bg2.webp`}
             width={860}
             height={860}
             alt="Gradient"

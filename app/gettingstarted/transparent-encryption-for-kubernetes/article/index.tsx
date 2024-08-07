@@ -10,6 +10,8 @@ import { navigation } from "@/mocks/getting-started";
 
 type GettingStartedProps = {};
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const GettingStarted = ({}: GettingStartedProps) => {
   const [openNavigation, setOpenNavigation] = useState<boolean>(false);
   const [openGroupId, setOpenGroupId] = useState<string | null>("g0");
@@ -45,7 +47,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
             >
               <div className="h6 text-n-1/50">Getting started</div>
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-down.svg`}
+                src={`${basePath}/images/icons/chevron-down.svg`}
                 width={24}
                 height={24}
                 alt="Arrow"
@@ -74,7 +76,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
                         className={`relative z-1 w-full transition-transform ${
                           group.id === openGroupId ? "rotate-90" : ""
                         }`}
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/chevron-right.svg`}
+                        src={`${basePath}/images/icons/chevron-right.svg`}
                         width={16}
                         height={16}
                         alt="Arrow"
