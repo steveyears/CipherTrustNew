@@ -41,7 +41,7 @@ const Roadmap = ({}: RoadmapProps) => (
         <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-1/2 -translate-y-1/2">
           <Image
             className="w-full opacity-60"
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/gradient.png`}
+            src={`${basePath}/images/gradient.png`}
             width={942}
             height={942}
             alt="Gradient"

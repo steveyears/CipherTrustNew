@@ -2,11 +2,27 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
+import Tagline from "@/components/Tagline";
+import TipBox from "@/components/TipBox";
 import { LuExternalLink } from "react-icons/lu";
 import { IoMdDownload } from "react-icons/io";
 import Image from "next/image";
+import {
+  BsSquareFill,
+  Bs1Square,
+  Bs2Square,
+  Bs3Square,
+  Bs4Square,
+  Bs5Square,
+  Bs6Square,
+  Bs7Square,
+  Bs8Square,
+  Bs9Square,
+} from "react-icons/bs";
 
 import { navigation } from "@/mocks/getting-started";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 type GettingStartedProps = {};
 
@@ -23,12 +39,12 @@ const GettingStarted = ({}: GettingStartedProps) => {
 
   const getColorClass = (url: string) => {
     if (url.includes("aws-marketplace")) {
-      return "text-[#00BBDD]"; 
+      return "text-[#00BBDD]";
     }
-    return "text-n-2"; 
+    return "text-n-2";
   };
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
     <Section>
@@ -40,7 +56,6 @@ const GettingStarted = ({}: GettingStartedProps) => {
         />
         <div className="lg:flex">
           <div className="mb-16 lg:flex-shrink-0 lg:w-[20rem] lg:mr-10 xl:mr-20">
-
             <div
               className="flex items-center justify-between w-full h-16 px-6 bg-n-7 rounded-xl cursor-pointer lg:hidden"
               onClick={() => setOpenNavigation(!openNavigation)}
@@ -115,10 +130,257 @@ const GettingStarted = ({}: GettingStartedProps) => {
             </div>
           </div>
           <div className="flex-1">
-            <h3 className="h3 mb-16 pb-8 border-b border-n-1/15">
-              Hello World
-            </h3>
-
+            <p className="h3 mb-16 pb-8 border-b border-n-1/15">
+              Installation Guide for CipherTrust Manager Community Edition on
+              Amazon Web Services (AWS)
+            </p>
+            <p className="body-2 mb-6">
+              This document is designed for open-source developers and IT
+              professionals who seek a robust solution for managing encryption
+              keys and securing sensitive data in a scalable cloud environment.
+            </p>
+            <p className="body-2 mb-6">
+              CipherTrust Manager Community Edition offers an enterprise-grade
+              encryption and key management system that integrates seamlessly
+              with AWS infrastructure. This guide provides detailed,
+              step-by-step instructions to deploy CipherTrust Manager on AWS,
+              ensuring that you leverage the full potential of AWS&apos;s cloud
+              capabilities.
+            </p>
+            <p className="h4">Prerequisites</p>
+            <p>
+              <ul className="body-2 mb-6">
+                <li className="flex items-start py-4">
+                  <Image
+                    src={`${basePath}/images/check_blue.svg`}
+                    width={24}
+                    height={24}
+                    alt="Check"
+                  />
+                  <p className="body-2 ml-4">
+                    <span className="font-bold">AWS Account:</span> Ensure you
+                    have an active AWS account with appropriate permissions to
+                    manage EC2 instances, security groups, and IAM roles.
+                  </p>
+                </li>
+                <li className="flex items-start py-4">
+                  <Image
+                    src={`${basePath}/images/check_blue.svg`}
+                    width={24}
+                    height={24}
+                    alt="Check"
+                  />
+                  <p className="body-2 ml-4">
+                    <span className="font-bold">IAM Role:</span> A role with
+                    sufficient permissions to create and manage necessary
+                    resources within AWS.
+                  </p>
+                </li>
+              </ul>
+            </p>
+            <p className="h4">Guide Outline</p>
+            <p>
+              <ul className="body-2 mb-6">
+                <li className="flex items-start py-4">
+                  <p>
+                    <p className="font-bold">
+                      <span className="text-n-12">Step 1: </span>AWS Permissions
+                    </p>
+                    Setting up the necessary Identity Access Management (IAM)
+                    roles.
+                  </p>
+                </li>
+                <li className="flex items-start py-4">
+                  <p>
+                    <p className="font-bold">
+                      <span className="text-n-12">Step 2: </span>Launching an
+                      EC2 Instance:
+                    </p>
+                    Detailed instructions to launch an EC2 instance using the
+                    CipherTrust Manager AMI from AWS Marketplace.
+                  </p>
+                </li>
+                <li className="flex items-start py-4">
+                  <p>
+                    <p className="font-bold">
+                      <span className="text-n-12">Step 3: </span>Accessing the
+                      Instance:
+                    </p>
+                    Connecting to your EC2 instance and accessing the
+                    CipherTrust Manager web interface.
+                  </p>
+                </li>
+                <li className="flex items-start py-4">
+                  <p>
+                    <p className="font-bold">
+                      <span className="text-n-12">Step 4: </span>Completing the
+                      Setup:
+                    </p>
+                    Initial configuration steps within CipherTrust Manager to
+                    get your environment up and running.
+                  </p>
+                </li>
+              </ul>
+            </p>
+            <div className="border-t border-n-1/15 pt-16 mt-16">
+              <Tagline>Step 1</Tagline>
+              <p className="h3">AWS Permissions</p>
+              <p className="body-2 mb-6 text-n-9">
+                Setting up the necessary Identity Access Management (IAM) roles.
+              </p>
+              <p>
+                <p className="mb-4">
+                  <Bs1Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Navigate to IAM
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                      In the AWS Management Console, search for IAM and select
+                      IAM to open the Identity and Access Management (IAM)
+                      dashboard.
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <Bs2Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Create a New Role
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                      Click on Roles in the left-hand menu.
+                    </div>
+                  </div>
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                      Click on the Create role button.
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <Bs3Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Select Trusted Entity
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    Choose AWS service as the type of trusted entity.
+                    </div>
+                  </div>
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    For the service that will use this role, select EC2. <span className="font-bold">Click Next: Permissions.</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <Bs4Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Attach Permissions Policies
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    <p className="mb-4">Attach the necessary policies for CipherTrust Manager. This typically includes:</p>
+                    <p className="font-code text-n-12 mb-2">AmazonEC2FullAccess</p>
+                    <p className="font-code text-n-12 mb-2">AmazonS3FullAccess</p>
+                    <p className="font-code text-n-12">AmazonVPCFullAccess</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    After selecting the policies, click <span className="font-bold">Next: Tags.</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <Bs5Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Add Tags (Optional)
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    Add tags to organize and manage your role if needed. Click <span className="font-bold">Next: Review.</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  <Bs6Square
+                    className="inline-block mr-2 -mt-1 text-n-9"
+                    size={20}
+                  />{" "}
+                  Name and Review
+                </p>
+                <div className="ml-8">
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    Provide a name for the role, such as <span className="font-code">CipherTrustManagerRole.</span>
+                    </div>
+                  </div>
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    Review the role and the policies attached to it.
+                    </div>
+                  </div>
+                  <div className="flex mb-4">
+                    <div className="inline-block w-2 mr-4">
+                      <BsSquareFill className="mt-2 text-n-9" size={8} />
+                    </div>
+                    <div className="inline-block w-full">
+                    Click <span className="font-bold">Create role</span> to finish.
+                    </div>
+                  </div>
+                </div>
+              </p>
+              <TipBox><p className="font-bold mb-2">Note the Role ARN</p>
+              <p>Once the role is created, locate the role in the IAM dashboard.
+              Click on the role name and copy the Role ARN. You'll need this ARN for setting up the CipherTrust Manager Community Edition virtual machine.</p></TipBox>
+            </div>
           </div>
         </div>
       </div>

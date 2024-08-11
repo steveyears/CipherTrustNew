@@ -18,7 +18,7 @@ const Collaboration = ({}: CollaborationProps) => {
                             <li className="mb-3 py-3" key={item.id}>
                                 <div className="flex items-center">
                                     <Image
-                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/check_blue.svg`}
+                                        src={`${basePath}/images/check_blue.svg`}
                                         width={24}
                                         height={24}
                                         alt="Check"
@@ -47,10 +47,10 @@ const Collaboration = ({}: CollaborationProps) => {
                                 <div className="w-[5.75rem] aspect-square m-auto p-[0.1875rem] bg-gradient-to-br from-n-9 to-[#fe08bf] rounded-full">
                                     <div className="flex items-center justify-center w-full h-full bg-n-11 rounded-full">
                                         <Image
-                                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/collaboration/icon-database.svg`}
+                                            src={`${basePath}/images/collaboration/icon-database.svg`}
                                             width={48}
                                             height={48}
-                                            alt="Brainwave"
+                                            alt="CipherTrust Data Security Platform"
                                         />
                                     </div>
                                 </div>
