@@ -379,7 +379,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
               </p>
               <TipBox><p className="font-bold mb-2">Note the Role ARN</p>
               <p>Once the role is created, locate the role in the IAM dashboard.
-              Click on the role name and copy the Role ARN. You'll need this ARN for setting up the CipherTrust Manager Community Edition virtual machine.</p></TipBox>
+              Click on the role name and copy the Role ARN. You&apos;ll need this ARN for setting up the CipherTrust Manager Community Edition virtual machine.</p></TipBox>
             </div>
           </div>
         </div>
