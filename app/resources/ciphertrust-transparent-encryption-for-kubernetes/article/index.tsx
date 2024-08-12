@@ -169,7 +169,7 @@ const index = () => {
               </li>
               <li className="flex items-start py-4 border-t border-n-6">
                 <Image
-                  src={`${basePath}/images/check_blue.svg}`}
+                  src={`${basePath}/images/check_blue.svg`}
                   width={24}
                   height={24}
                   alt="Check"

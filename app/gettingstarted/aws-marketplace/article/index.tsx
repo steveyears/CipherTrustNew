@@ -144,7 +144,7 @@ const GettingStarted = ({}: GettingStartedProps) => {
               encryption and key management system that integrates seamlessly
               with AWS infrastructure. This guide provides detailed,
               step-by-step instructions to deploy CipherTrust Manager on AWS,
-              ensuring that you leverage the full potential of AWS&apos;s cloud
+              ensuring that you leverage the full potential of AWS&apos; cloud
               capabilities.
             </p>
             <p className="h4">Prerequisites</p>
